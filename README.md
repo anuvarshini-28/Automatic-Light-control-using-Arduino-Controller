@@ -1,15 +1,17 @@
-# Automatic Light Controller using LDR and Arduino UNO controller.
+# AUTOMATIC LIGHT CONTROLLER USING LDR AND ARDUINO UNO CONTROLLER. 
 
 ##  AIM:
 
 To design and simulate automatic light controller using LDR and Arduino UNO controller in proteus.
 
-## Software required:
+## SOFTWARE REQUIRED::
 Arduino IDE </br>
 Proteous
 
 ## PROCEDURE:
-### Arduino IDE
+
+### ARDUINO IDE:
+
 Step1:Open the Arduino IDE </br>
 Step2: Go to file and select new file option </br>
 Step3:Type the program </br>
@@ -17,7 +19,7 @@ Step4:Go to file and select save option to save the program </br>
 Step5:Go to sketch and select verify or compile options </br>
 Step6:If no error Hex file will be generated in the temporary folder </br>
 
-### Proteus
+### PROTEUS:
 Step7:Open the Proteus software </br>
 Step8:Go to file select new design and click ok button </br>
 Step9:Select component mode and click pick devices from the library </br>
@@ -32,13 +34,15 @@ It automatically controls street lights based on the light intensity detected.
 In this experiment, we utilize the Arduino UNO R3 for implementation. A light-dependent resistor is used for light detection. 
 To provide isolation between the Arduino and the 220V AC street light, a relay is incorporated.
 
-### Light dependent resistor (LDR)
+### LIGHT DEPENDENT RESISTOR(LDR):
 Light Dependent Resistor (LDR) is used to detect changes in light intensity or as a light sensor. An LDR is essentially a variable resistor that changes its resistance with the intensity of light. When the light intensity is high, the LDR has low resistance, and when the light intensity decreases, the LDR offers high resistance. Therefore, there is an inverse relationship between the intensity of light and the resistance of the LDR
 To measure the resistance of an LDR and calculate the intensity of light, we can use the Arduino UNO R3 board, which has six analog-to-digital converter channels. However, these channels can only measure voltage and cannot measure resistance directly. To overcome this, we use signal conditioning by connecting a 10K ohm resistor in series with the LDR and a 5-volt source. This circuit converts the resistance into voltage form, which can then be measured using the analog-to-digital converter of the Arduino. The measured voltage across the LDR can be converted back into resistance using the voltage division formula.
 
-### Relay
+### RELAY:
 In this experiment a relay is used to provide isolation between low-voltage circuitry and high-voltage circuitry. Arduino is also used to provide a control signal to the relay whenever the intensity of light falls below a certain level. The control signal is generated from pin 13 of Arduino, which is used as an output pin
-### Light Sensor with Arduino
+
+### LIGHT SENSOR WITH ARDUINO: 
+
 The circuit diagram shown in the image represents a light sensor and street light control system using Arduino. Let’s break down the components and their functions:
 1.	Arduino UNO R3: The Arduino UNO R3 board serves as the main microcontroller in this project. It receives input from the light sensor and controls the street lights based on the detected light intensity.
 2.	Light Dependent Resistor (LDR): The LDR is a sensor that detects changes in the intensity of light. It is connected in series with a 10K ohm resistor and a 5-volt power supply. The resistance of the LDR varies with the intensity of light falling upon it.
@@ -52,11 +56,6 @@ Overall, this circuit diagram showcases how the Arduino, LDR, ADC, relay, and tr
 
 
 
-
-
-
-
-
 LDR Features of LDR are as follows: 
 
 1. High reliability. 2. Light weight. 3. Wide spectral response. 4. Wide ambient temperature range.
@@ -64,9 +63,16 @@ LDR Features of LDR are as follows:
 
 ## PROGRAM:
 
+<img width="1919" height="999" alt="image" src="https://github.com/user-attachments/assets/86afce55-0088-4945-b643-65cac38cbd34" />
+
+
 ## CIRCUIT DIAGRAM:
 
+<img width="1919" height="1058" alt="image" src="https://github.com/user-attachments/assets/055ff77c-5e3f-42a3-a8df-1d6f7b3b0105" />
+
 ## OUTPUT:
+
+<img width="1916" height="1079" alt="image" src="https://github.com/user-attachments/assets/d6740e4a-8986-4831-8520-727522ef8aa3" />
 
 ## RESULT:
 Thus the automatic light controller was designed and simulated using LDR and Arduino UNO controller.
